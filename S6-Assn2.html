@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Fizz And Buzz</title>
+		<meta charset="UTF-8">
+		
+		<style type="text/css">
+		
+		</style>
+		
+	</head>
+	<body>
+		<p></p>	
+		<script type="text/javascript">
+		var message = "";
+		function printText(){
+			for(var num = 1 ; num <= 100 ; num++){
+				if(num % 3 == 0 && num % 5 == 0 ){
+					message += num + " :   FizzBuzz" + "<br>";
+				}
+				else{
+					if(num % 3 == 0){
+						message += num + " :   Fizz" + "<br>";
+					}
+					else if(num % 5 ==0) {
+						message += num + " :   FizzBuzz" + "<br>";
+					}
+					else{
+						message += num + "<br>";
+					}
+				}
+			}
+
+			document.getElementsByTagName("p")[0].innerHTML = message;
+		}
+		printText();
+		</script>
+	</body>
+</html>
